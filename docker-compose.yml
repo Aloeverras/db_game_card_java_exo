@@ -5,8 +5,14 @@ services:
     build:
       context: .devcontainer
       dockerfile : Dockerfile
+      args :
+        - USER_NAME=${USER_NAME}
+        - USER_ID=${USER_ID}
+        - GROUP_NAME=${GROUP_NAME}
+        - GROUP_ID=${GROUP_ID}
+        - DEVMODE=${DEVMODE}
     command: ["sleep", "infinity"]
     volumes:
       - .:/workspace:rw
     ports:
-      - "8000:8000"
+      - "${DEVPORT}:${DEVPORT}"
