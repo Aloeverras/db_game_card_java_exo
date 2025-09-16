@@ -1,0 +1,12 @@
+version : "3.8"
+
+services:
+  devcontainer_game_card_exo:
+    build:
+      context: .devcontainer
+      dockerfile : Dockerfile
+    command: ["sleep", "infinity"]
+    volumes:
+      - .:/workspace:rw
+    ports:
+      - "8000:8000"
