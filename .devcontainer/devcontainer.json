@@ -1,3 +1,12 @@
 {
-    "name" : "devcontainer db game card java exo"
+    "name" : "devcontainer db game card java exo",
+    "dockerComposeFile" : "../docker-compose.yml",
+    "service" : "devcontainer_game_card_exo",
+    "workspaceFolder": "/workspace",
+    "customizations": {
+        "vscode": {
+            "extensions": [],
+            "settings": {}
+        }
+    }
 }
