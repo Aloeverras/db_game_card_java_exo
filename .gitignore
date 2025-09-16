@@ -1,0 +1,31 @@
+.env
+mesNotes.md
+
+Un dépôt Git est initialisé dans un projet Java (ou n'importe quel autre projet) pour suivre les modifications des fichiers. La base d'un dépôt Git n'est pas spécifique à Java, mais son usage est le même.
+
+Initialisation d'un dépôt Git
+Ouvrez un terminal et naviguez jusqu'à la racine de votre projet Java.
+
+Exécutez la commande git init. Cela crée un sous-répertoire .git dans votre dossier de projet. C'est dans ce répertoire que Git stocke toutes les métadonnées et l'historique de votre projet.
+
+Fichier .gitignore
+Un élément crucial pour tout projet Java est le fichier .gitignore. Ce fichier indique à Git quels fichiers ou dossiers il doit ignorer. Pour les projets Java, cela inclut généralement les fichiers compilés (.class), les répertoires de build (target/), et les fichiers de l'IDE (.idea/, .vscode/).
+
+Voici un exemple de contenu pour un fichier .gitignore de base pour un projet Java :
+
+# Fichiers de compilation Java
+*.class
+
+# Répertoire de build Maven/Gradle
+target/
+build/
+
+# Fichiers et dossiers d'IDE (IntelliJ IDEA, VS Code, Eclipse)
+.idea/
+.vscode/
+.settings/
+.classpath
+.project
+
+# Fichiers de log
+*.log
