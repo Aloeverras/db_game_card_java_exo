@@ -9,22 +9,15 @@
                 "vscjava.vscode-java-pack",
                 "mtxr.sqltools",
                 "inferrinizzard.prettier-sql-vscode",
-                "esbenp.prettier-vscode"
+                "esbenp.prettier-vscode",
+                "vscjava.vscode-spring-initializr",
+                "vscjava.vscode-spring-boot-dashboard"
             ],
             "settings": {
                 // java setting
-                "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk",
-                "java.configuration.runtimes": [
-                    {
-                        "name": "JavaSE-21",
-                        "path": "/usr/lib/jvm/java-21-openjdk",
-                        "default": true
-                    }
-                ],
-                "java.debug.settings.console": "integratedTerminal",
-                //maven setting
-                // terminal setting
-                "terminal.integrated.defaultProfile.linux": "sh"
+                "java.project.sourcePaths" : ["src/main/java"],
+                "java.project.resourcePaths": ["src/main/resources"],
+                "terminal.integrated.defaultProfile.linux": "bash"
                 }
             }
         }
