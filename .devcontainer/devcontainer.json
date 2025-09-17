@@ -13,22 +13,16 @@
             ],
             "settings": {
                 // java setting
-                "java.jdt.ls.java.home": "/usr/lib/jvm/ms-openjdk-21",
+                "java.jdt.ls.java.home": "/usr/lib/jvm/java-21-openjdk",
                 "java.configuration.runtimes": [
                     {
                         "name": "JavaSE-21",
-                        "path": "/usr/lib/jvm/ms-openjdk-21",
+                        "path": "/usr/lib/jvm/java-21-openjdk",
                         "default": true
                     }
                 ],
                 "java.debug.settings.console": "integratedTerminal",
                 //maven setting
-                "maven.terminal.customEnv": [
-                    {
-                        "environmentVariable": "MAVEN_OPTS",
-                        "value": "-Dfile.encoding=UTF-8"
-                    }
-                ],
                 // terminal setting
                 "terminal.integrated.defaultProfile.linux": "sh"
                 }
