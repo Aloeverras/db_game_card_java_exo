@@ -18,7 +18,7 @@ LABEL DESCRIPTION_PROJECT="db game card in java exo"
 LABEL REMOTE_USER=${USER_NAME}
 
 #environnements variables
-ENV MAVEN_VERSION="3.9.6"
+ENV MAVEN_VERSION="4.0.0"
 ENV JAVA_VERSION=21
 ENV JAVA_HOME=/usr/lib/jvm/java-21-openjdk-amd64
 ENV PATH=${JAVA_HOME}/bin:${PATH}
