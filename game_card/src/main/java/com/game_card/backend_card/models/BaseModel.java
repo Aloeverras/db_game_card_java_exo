@@ -18,8 +18,12 @@ public abstract class BaseModel<T> {
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     protected Long id;
     protected T nameModel;
+    protected T[] posibilities;
 
     public abstract Long getId();
     public abstract T getNameModel();
     public abstract String fullNameModel();
+    public abstract T[] getPosibilities();
+    public abstract void setPosibilities(T[] posibilities);
+    public abstract void logging();
 }
