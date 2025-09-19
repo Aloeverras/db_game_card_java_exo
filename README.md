@@ -2,4 +2,6 @@
 
 
 ## Principals classes project
-- **BaseModel** : base class mother of all classes.
+- **BaseModel** : base class mother of all classes, *generic and abstract*.
+- *Suit* : color card
+- *Ranck* : name and power of card
