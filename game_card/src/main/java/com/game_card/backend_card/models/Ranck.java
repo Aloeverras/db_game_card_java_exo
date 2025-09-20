@@ -5,24 +5,23 @@ import java.util.List;
 import jakarta.persistence.CascadeType;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
+import jakarta.persistence.Table;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
-import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @AllArgsConstructor
 @Getter
 @Entity
-@Table(name="suit", schema="deck")
-public class Suit {
+@Table(name="ranck", schema="deck")
+public class Ranck {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private final Long ID;
-    private final char COLOR = ' ';
-    private final boolean IS_RED = COLOR == 'D' || COLOR == 'H';
+    private final char RANCK_NAME;
 
-    @OneToMany(mappedBy="suit", cascade=CascadeType.ALL)
+    @OneToMany(mappedBy="ranck", cascade = CascadeType.ALL)
     private final List<Card> CARDS;
 }
