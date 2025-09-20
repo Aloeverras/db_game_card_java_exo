@@ -28,5 +28,5 @@ public class SuitService {
 
     public List<Suit> findAllSuitsByColorNames(List<Character> colorNames){
         return SUITREPOSITORY.findAllSuitsByColorNames(colorNames);
-    }
+    };
 }
