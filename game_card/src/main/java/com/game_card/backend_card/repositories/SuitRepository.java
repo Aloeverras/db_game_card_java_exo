@@ -12,6 +12,6 @@ public interface SuitRepository extends JpaRepository<Suit, Long>{
     Suit findSuitByColorName(char colorName);
     Suit findSuitByIsRed(boolean isRed);
 
-    List<Suit> findAllSuitsByColorName(List<Character> colorNames);
-    List<Suit> findAllSuitsByIsRed(List<Boolean> isReds);
+    List<Suit> findAllSuitsByColorNames(List<Character> colorNames);
+    List<Suit> findAllSuitsByIsReds(List<Boolean> isReds);
 }
